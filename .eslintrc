@@ -1,3 +1,23 @@
 {
-  "extends": "react-app"
+  "parser": "babel-eslint",
+  "extends": [
+    "plugin:flowtype/recommended",
+    "plugin:jsx-a11y/strict",
+    "plugin:react/all",
+    "airbnb"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "flowtype"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
 }
