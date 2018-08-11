@@ -22,7 +22,6 @@
     "package-win": "yarn build && electron-builder build --win --x64",
     "postinstall": "node -r babel-register internals/scripts/CheckNativeDep.js && yarn flow-typed && yarn build-dll && electron-builder install-app-deps package.json",
     "postlint-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.js'",
-    "precommit": "lint-staged",
     "prestart": "yarn build",
     "start": "cross-env NODE_ENV=production electron ./app/",
     "start-main-dev": "cross-env HOT=1 NODE_ENV=development electron -r babel-register ./app/main.dev.js",
@@ -208,19 +207,24 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.2.0",
+    "@material-ui/core": "^1.4.3",
+    "@material-ui/icons": "^2.0.1",
     "devtron": "^1.4.0",
     "electron-debug": "^2.0.0",
     "history": "^4.7.2",
+    "lodash": "^4.17.10",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-hot-loader": "^4.3.4",
+    "react-jsonschema-form": "^1.0.4",
     "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
-    "source-map-support": "^0.5.6"
+    "source-map-support": "^0.5.6",
+    "styled-components": "^3.4.2"
   },
   "devEngines": {
     "node": ">=7.x",

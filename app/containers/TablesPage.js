@@ -1,11 +1,12 @@
 // @flow
 import React, { Component } from 'react';
-import HomePage from '../components/HomePage';
+
+import TablesPage from '../components/TablesPage';
 
 type IProps = {};
 
 export default class Container extends Component<IProps> {
   render() {
-    return <HomePage />;
+    return <TablesPage />;
   }
 }
