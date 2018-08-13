@@ -6,8 +6,6 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import StorageIcon from '@material-ui/icons/Storage';
 
-import routes from '../constants/routes.json';
-
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
@@ -28,13 +26,13 @@ const IconWrapper = styled.div`
 
 type ITable = {|
   name: string,
-  label: string,
+  label: string
 |};
 
 const tables: ITable[] = [
   { name: 'clients', label: 'Clients' },
   { name: 'products', label: 'Products' },
-  { name: 'orders', label: 'Orders' },
+  { name: 'orders', label: 'Orders' }
 ];
 
 type Props = {};

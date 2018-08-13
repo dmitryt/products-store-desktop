@@ -1,28 +1,28 @@
-export default {
+import get from 'lodash/get';
+
+const schema = {
   schema: {
-    title: 'A registration form',
-    description: 'A simple form example.',
     type: 'object',
-    required: [
-      'name',
-    ],
+    required: ['name', 'email'],
     properties: {
       name: {
         type: 'string',
-        title: 'Name',
+        title: 'Name'
       },
       email: {
-        type: 'email',
-        title: 'Email',
+        type: 'string',
+        title: 'Email'
       },
       phoneNumber: {
         type: 'string',
-        title: 'Phone Number',
+        title: 'Phone Number'
       },
       addInformation: {
         type: 'text',
-        title: 'Additional Information',
-      },
-    },
-  },
+        title: 'Additional Information'
+      }
+    }
+  }
 };
+
+export default get(schema, 'schema.properties', {});
