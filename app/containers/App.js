@@ -12,7 +12,7 @@ const Root = styled.div`
 
 type Props = {
   store: {},
-  history: {}
+  history: {},
 };
 
 export default class App extends Component<Props> {

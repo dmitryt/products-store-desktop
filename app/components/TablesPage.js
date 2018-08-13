@@ -26,13 +26,13 @@ const IconWrapper = styled.div`
 
 type ITable = {|
   name: string,
-  label: string
+  label: string,
 |};
 
 const tables: ITable[] = [
   { name: 'clients', label: 'Clients' },
   { name: 'products', label: 'Products' },
-  { name: 'orders', label: 'Orders' }
+  { name: 'orders', label: 'Orders' },
 ];
 
 type Props = {};

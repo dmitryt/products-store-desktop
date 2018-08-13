@@ -4,7 +4,7 @@ import MTextField from '@material-ui/core/TextField';
 
 type IProps = {
   schema: any,
-  data: any
+  data: any,
 };
 
 const TextField = ({ schema, data, ...rest }: IProps) => (

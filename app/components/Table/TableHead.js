@@ -14,7 +14,7 @@ const columnData = tableFields
 type IProps = {|
   onRequestSort: () => void,
   order: any,
-  orderBy: any
+  orderBy: any,
 |};
 
 class EnhancedTableHead extends React.Component<IProps> {

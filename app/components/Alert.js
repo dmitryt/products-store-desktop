@@ -11,7 +11,7 @@ type IProps = {|
   open: boolean,
   content: string,
   onClose: () => void,
-  onAccept: () => void
+  onAccept: () => void,
 |};
 
 const AlertDialog = ({ open, content, onClose, onAccept }: IProps) => (

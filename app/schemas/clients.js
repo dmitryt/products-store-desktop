@@ -7,22 +7,22 @@ const schema = {
     properties: {
       name: {
         type: 'string',
-        title: 'Name'
+        title: 'Name',
       },
       email: {
         type: 'string',
-        title: 'Email'
+        title: 'Email',
       },
       phoneNumber: {
         type: 'string',
-        title: 'Phone Number'
+        title: 'Phone Number',
       },
       addInformation: {
         type: 'text',
-        title: 'Additional Information'
-      }
-    }
-  }
+        title: 'Additional Information',
+      },
+    },
+  },
 };
 
 export default get(schema, 'schema.properties', {});

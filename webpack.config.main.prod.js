@@ -22,23 +22,23 @@ export default merge.smart(baseConfig, {
 
   output: {
     path: __dirname,
-    filename: './app/main.prod.js'
+    filename: './app/main.prod.js',
   },
 
   optimization: {
     minimizer: [
       new UglifyJSPlugin({
         parallel: true,
-        sourceMap: true
-      })
-    ]
+        sourceMap: true,
+      }),
+    ],
   },
 
   plugins: [
     new BundleAnalyzerPlugin({
       analyzerMode:
         process.env.OPEN_ANALYZER === 'true' ? 'server' : 'disabled',
-      openAnalyzer: process.env.OPEN_ANALYZER === 'true'
+      openAnalyzer: process.env.OPEN_ANALYZER === 'true',
     }),
 
     /**
@@ -52,8 +52,8 @@ export default merge.smart(baseConfig, {
      */
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'production',
-      DEBUG_PROD: 'false'
-    })
+      DEBUG_PROD: 'false',
+    }),
   ],
 
   /**
@@ -63,6 +63,6 @@ export default merge.smart(baseConfig, {
    */
   node: {
     __dirname: false,
-    __filename: false
-  }
+    __filename: false,
+  },
 });

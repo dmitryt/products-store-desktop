@@ -8,14 +8,14 @@ export const uiSchemas = {
   clients: {
     'ui:order': ['name', 'email', 'phoneNumber', 'additionalInformation'],
     addInformation: {
-      'ui:widget': 'textarea'
+      'ui:widget': 'textarea',
     },
     email: {
       'ui:options': {
-        inputType: 'email'
-      }
-    }
-  }
+        inputType: 'email',
+      },
+    },
+  },
 };
 
 const indexes = get(uiSchemas, 'clients.ui:order').reduce(

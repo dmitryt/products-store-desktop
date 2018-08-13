@@ -19,7 +19,7 @@ function getComponent(schema) {
 type IProps = {
   schema: any,
   data: any,
-  key: string
+  key: string,
 };
 
 export default function createFieldFactory({ schema, key, ...rest }: IProps) {

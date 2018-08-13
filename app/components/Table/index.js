@@ -50,14 +50,14 @@ function getSorting(order, orderBy) {
 const styles = theme => ({
   root: {
     width: '100%',
-    marginTop: theme.spacing.unit * 3
+    marginTop: theme.spacing.unit * 3,
   },
   table: {
-    minWidth: 1020
+    minWidth: 1020,
   },
   tableWrapper: {
-    overflowX: 'auto'
-  }
+    overflowX: 'auto',
+  },
 });
 
 class EnhancedTable extends React.Component {
@@ -74,13 +74,13 @@ class EnhancedTable extends React.Component {
         createData('Jim Kerry', 'Hello world'),
         createData('Bruce Willis', 'Hop Hey'),
         createData('Tom Kruz', 'Something else'),
-        createData('Pamella Anderson', 'Mr.s Anderson, hello')
+        createData('Pamella Anderson', 'Mr.s Anderson, hello'),
       ],
       page: 0,
       rowsPerPage: 5,
       editableItemIndex: -1,
       editableItem: null,
-      deletableItemIndex: -1
+      deletableItemIndex: -1,
     };
   }
 
@@ -186,7 +186,7 @@ class EnhancedTable extends React.Component {
       page,
       editableItemIndex,
       editableItem,
-      deletableItemIndex
+      deletableItemIndex,
     } = this.state;
     const emptyRows =
       rowsPerPage - Math.min(rowsPerPage, data.length - page * rowsPerPage);
@@ -222,7 +222,7 @@ class EnhancedTable extends React.Component {
                                 data: editableItem[key],
                                 onKeyUp: this.onKeyup,
                                 onChange: e =>
-                                  this.onDataChange(e.target.value, key)
+                                  this.onDataChange(e.target.value, key),
                               })
                             : n[key]}
                         </TableCell>
@@ -279,10 +279,10 @@ class EnhancedTable extends React.Component {
           rowsPerPage={rowsPerPage}
           page={page}
           backIconButtonProps={{
-            'aria-label': 'Previous Page'
+            'aria-label': 'Previous Page',
           }}
           nextIconButtonProps={{
-            'aria-label': 'Next Page'
+            'aria-label': 'Next Page',
           }}
           onChangePage={this.handleChangePage}
           onChangeRowsPerPage={this.handleChangeRowsPerPage}
